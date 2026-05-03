@@ -1,0 +1,44 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glow-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur-me">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Glow -->
+  <circle cx="200" cy="200" r="150" fill="url(#glow-grad)" filter="url(#blur-me)"/>
+  
+  <!-- Central Core -->
+  <circle cx="200" cy="200" r="40" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="200" y="205" text-anchor="middle" fill="white" font-family="Inter" font-size="12" font-weight="bold">START</text>
+  
+  <!-- Milestone Branches -->
+  <g opacity="0.8">
+    <!-- Branch 1: AI/ML -->
+    <path d="M200 160 L200 60" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 2"/>
+    <circle cx="200" cy="60" r="20" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="200" y="30" text-anchor="middle" fill="#93c5fd" font-family="Inter" font-size="10" font-weight="bold">AI/ML EXPERTISE</text>
+    
+    <!-- Branch 2: Marketing -->
+    <path d="M235 180 L320 120" stroke="#a855f7" stroke-width="2" stroke-dasharray="4 2"/>
+    <circle cx="320" cy="120" r="20" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <text x="350" y="110" text-anchor="start" fill="#d8b4fe" font-family="Inter" font-size="10" font-weight="bold">MARKETING GROWTH</text>
+    
+    <!-- Branch 3: Leadership -->
+    <path d="M165 180 L80 120" stroke="#ffa726" stroke-width="2" stroke-dasharray="4 2"/>
+    <circle cx="80" cy="120" r="20" fill="#1e293b" stroke="#ffa726" stroke-width="2"/>
+    <text x="50" y="110" text-anchor="end" fill="#fcd34d" font-family="Inter" font-size="10" font-weight="bold">LEADERSHIP</text>
+  </g>
+  
+  <!-- Orbiting Data Points -->
+  <circle r="4" fill="#3b82f6">
+    <animateMotion dur="8s" repeatCount="indefinite" path="M200 200 m-100 0 a 100 100 0 1 0 200 0 a 100 100 0 1 0 -200 0" />
+  </circle>
+  <circle r="3" fill="#a855f7">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M200 200 m-130 0 a 130 130 0 1 0 260 0 a 130 130 0 1 0 -260 0" />
+  </circle>
+</svg>
