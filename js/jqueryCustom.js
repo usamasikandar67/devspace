@@ -9,9 +9,7 @@ jQuery(window).on('load', function() {
 			formError();
 			submitMSG(false, "Please Follow Error Messages and Complete as Required");
 		} else {
-			// everything looks good!
-			event.preventDefault();
-			submitForm();
+			// let the form submit natively
 		}
 	});
 
@@ -30,7 +28,7 @@ jQuery(window).on('load', function() {
 
 		$.ajax({
 			type: "POST",
-			url: "https://formspree.io/usamasikandar58@gmail.com",
+			url: "https://formsubmit.co/ajax/usamasikandar58@gmail.com",
 			data: formData,
 			dataType: "json",
 			headers: {
